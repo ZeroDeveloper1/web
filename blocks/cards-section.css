@@ -1,0 +1,119 @@
+/* Asegurar que la sección de promoción y las tarjetas tengan el mismo ancho y estén alineadas */
+.promo-section,
+.cards-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Ajustar padding para que coincida */
+    box-sizing: border-box;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 32%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px; /* Añadir altura mínima */
+}
+
+.card-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+}
+
+.card-media {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-media-left {
+    margin-right: 15px;
+}
+
+.card-media-left img {
+    width: 140px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card-media-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-action {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.desde .prefix,
+.desde .value,
+.desde .suffix {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.desde .value {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff6600;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .card {
+        width: 48%; /* Dos tarjetas por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Una tarjeta por fila en pantallas pequeñas */
+    }
+
+    .card-media {
+        flex-direction: column;
+    }
+
+    .card-media-left {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .card-media-left img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card-media-body {
+        padding: 0 15px;
+    }
+}
+
+

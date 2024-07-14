@@ -1,0 +1,99 @@
+/* Estilos para la sección promocional */
+.promo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 5%;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 80px auto 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  
+}
+
+.promo-content {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.promo-tag {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4A90E2;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.promo-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.promo-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.promo-subtitle strong {
+  color: #4A90E2;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #F89A20;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #E08A10;
+}
+
+.promo-note {
+  font-size: 14px;
+  color: #777;
+  margin-top: 15px;
+}
+
+.promo-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .promo-section {
+      flex-direction: column;
+      padding: 60px 5%;
+  }
+
+  .promo-content {
+      padding-right: 0;
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .promo-title {
+      font-size: 28px;
+  }
+
+  .promo-subtitle {
+      font-size: 20px;
+  }
+}

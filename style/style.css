@@ -1,0 +1,200 @@
+.testimonials {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.testimonials h2 {
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.featured-products {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.featured-products h2 {
+    margin-bottom: 20px;
+}
+
+.product {
+    display: inline-block;
+    width: 20%;
+    margin: 0 1%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 15px 0 10px;
+    font-size: 1.25em;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #e55d00;
+}
+.newsletter {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+.newsletter input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #e55d00;
+}
+.blog {
+    max-width: 1200px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.blog h2 {
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.blog-post h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.blog-post p {
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+.cta {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #e55d00;
+}
+/* Media Queries para secciones nuevas */
+@media (max-width: 992px) {
+    .product {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .blog-post {
+        text-align: center;
+    }
+    .newsletter form, .newsletter input[type="email"], .newsletter button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
